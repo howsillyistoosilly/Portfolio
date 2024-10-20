@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header class="header"></header>
+    <link rel="stylesheet" href="style.css">
+    <script src="scroll.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Adarsh.S</a></li>
+            <li class="hideOnmobile"><a href="#about">About Me</a></li>
+            <li class="hideOnmobile"><a href="#projects">Projects</a></li>
+            <li class="hideOnmobile"><a href="#Contact">Contact</a></li>
+            <li class="menubutton" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#e8eaed"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></a></li>
+
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a>
+
+            <li><a href="#about"><About Me></a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='flex' 
+            
+
+        }
+        function hidesidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>  
+    <section>
+        <h1 class="pw"><br>Portfolio<br>Website</h1>
+    </section>
+    <div id="about" class="content">
+        <h1>
+            About Me
+        </h1>
+        <p>elloo, my name is adarsh, i only recently started web dev (approximately 10 hours ago) and i am doing btech cse with data science, i have one too many hobbies which all gets thrown out the window when i open reels (my dopmaine receptors are fried beyond function) and i also like badminton and football</p>>
+</div>
+    <div class="content2" id="projects">
+        <h1>
+            My Projects
+        </h1>
+        <p>
+            This website,yupp,thats about all as of now. i dont have any projects sadly i am still starting out so i havent really gone as indepth as i would have liked
+        </p>
+    </div >
+    <DIV class="content3" id="Contact">Contact me
+        <footer>
+            <div class="socialIcons">
+                <a href="https://www.youtube.com/channel/UCzqvZohuPY_8YEbI8MzpBEQ"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/howsillyistoosilly/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/adarsh-satish-050aa12b9/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://steamcommunity.com/profiles/76561199078443246/"><i class="fa-brands fa-steam"></i></a>
+            </div></footer>  
+        
+
+    </DIV>
+    
+</body>
+</html>
